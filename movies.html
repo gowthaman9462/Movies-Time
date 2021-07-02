@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project1</title>
+        <meta charset="UTF-8">
+        <link href="movies.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <a href="index.html"><img src="logo.jpg" alt="movie's site" id="logo"></a>
+                <div id="menu">
+                    <ul>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="#">TV Series</a></li>
+                        <li><a href="#">Audio</a></li>
+                    </ul>
+                </div>    
+            </nav>
+        </header>
+        <section id="content">
+            <div class="slide-container">
+                <div class="image-container">
+                    <img src="brave.jpg" alt="Brave" class="slide">
+                    <img src="dark knight.jpg" alt="Dark knight" class="slide">
+                    <img src="looper.jpg" alt="looper" class="slide">
+                    <img src="Start war.jpg" alt="Start War" class="slide">
+                </div>
+                <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a  class="next" onclick="plusSlides(1)">&#10095</a>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("slide");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                    }
+                </script>
+            </div>
+            <div class="search">
+                <select name="genre" id="genre">
+                    <option>All</option>
+                    <option>Drama</option>
+                    <option>Action</option>
+                    <option>Sci-Fi</option>
+                </select>
+                <input type="text" name="Search your Favourite Movie">
+            </div>
+            <div class="movies">
+                <div class="pia">
+                    <div class="title_slide">
+                        <div class="movie_box1">
+                            <img src="7.jpg" alt="seven" >
+                            <p>
+                                <b>7</b><br>
+                                <br>
+                                Thriller,Comedy.  
+                            </p>
+                        </div>
+                        <div class="movie_box1">
+                            <img src="a.jpg" alt="Avengers" >
+                            <p>
+                                <b>Avengers</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box1">
+                            <img src="aladhin.jpg" alt="aladhin" >
+                            <p>
+                                <b>Aladhin</b><br>
+                                <br>
+                                Mystery,Comedy.  
+                            </p>
+                        </div>
+                        <div class="movie_box1">
+                            <img src="bb.jpg" alt="bb" >
+                            <p>
+                                <b>Beauty and Beast</b><br>
+                                <br>
+                                Adventure,Mystery.  
+                            </p>
+                        </div>
+                        <div class="movie_box1">
+                            <img src="blac.jpg" alt="black oanther" >
+                            <p>
+                                <b>Black Panther</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box1">
+                            <img src="bm.jpg" alt="Black Man" >
+                            <p>
+                                <b>Black Man</b><br>
+                                <br>
+                                Action,Adventure.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title_slide">
+                        <div class="movie_box2">
+                            <img src="brave.jpg" alt="Brave" >
+                            <p>
+                                <b>Brave</b><br>
+                                <br>
+                                Thriller,Action.  
+                            </p>
+                        </div>
+                        <div class="movie_box2">
+                            <img src="dark knight.jpg" alt="dark knight" >
+                            <p>
+                                <b>Dark knight</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box2">
+                            <img src="ddd.jpg" alt="Death Don't Die" >
+                            <p>
+                                <b>Death Don't Die</b><br>
+                                <br>
+                                Mystery,Adventure.  
+                            </p>
+                        </div>
+                        <div class="movie_box2">
+                            <img src="gh.jpg" alt="Us" >
+                            <p>
+                                <b>Us</b><br>
+                                <br>
+                                Adventure,Mystery.  
+                            </p>
+                        </div>
+                        <div class="movie_box2">
+                            <img src="jo.jpg" alt="IO" >
+                            <p>
+                                <b>Io</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box2">
+                            <img src="joker.jpg" alt="Joker" >
+                            <p>
+                                <b>Joker</b><br>
+                                <br>
+                                Action,Adventure.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title_slide">
+                        <div class="movie_box3">
+                            <img src="ks.jpg" alt="kong" >
+                            <p>
+                                <b>Kong The Skull Island</b><br>
+                                <br>
+                                Thriller,Action.  
+                            </p>
+                        </div>
+                        <div class="movie_box3">
+                            <img src="looper.jpg" alt="looper" >
+                            <p>
+                                <b>Looper</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box3">
+                            <img src="ml.jpg" alt="MoonLight" >
+                            <p>
+                                <b>MoonLight</b><br>
+                                <br>
+                                Mystery,Adventure.  
+                            </p>
+                        </div>
+                        <div class="movie_box3">
+                            <img src="sp.jpg" alt="Spider Man" >
+                            <p>
+                                <b>Spider Man</b><br>
+                                <br>
+                                Adventure,Mystery.  
+                            </p>
+                        </div>
+                        <div class="movie_box3">
+                            <img src="Start war.jpg" alt="Stae War" >
+                            <p>
+                                <b>Star War</b><br>
+                                <br>
+                                Action,Thriller.  
+                            </p>
+                        </div>
+                        <div class="movie_box3">
+                            <img src="th.jpg" alt="The Hill" >
+                            <p>
+                                <b>The Hill</b><br>
+                                <br>
+                                Action,Adventure.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class=foot>
+                <a href="index.html"><img src="logo.jpg" alt="movie's site" id="logo1"></a>
+                <p>Powered by Movies Entertainment portal 2021. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
