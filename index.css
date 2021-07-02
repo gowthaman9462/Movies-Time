@@ -47,6 +47,10 @@ body{
     color:rgb(253, 253, 253);
 }
 
+#content{
+    height:1550px;
+}
+
 .slide{
     float: left;
     width: 100%;
@@ -212,6 +216,7 @@ body{
 }
 
 .foot{
+    top:1500px;
     bottom: 0;
     padding: 20px;
     display: flex;
